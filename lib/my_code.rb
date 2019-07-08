@@ -29,3 +29,5 @@ def reduce(array, start=nil)
   end
   sum
 end
+
+reduce(source_array){|memo, n| memo && n}
