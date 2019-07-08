@@ -10,7 +10,7 @@ def map(array)
   new
 end
 
-map([1, 2, 3, -9]){|n| n * n}
+# map(array){|n| n * n}
 
 
 
@@ -30,4 +30,4 @@ def reduce(array, start = nil)
   sum
 end
 
-reduce(array){|memo, n| memo && n}
+# reduce(array){|memo, n| memo && n}
