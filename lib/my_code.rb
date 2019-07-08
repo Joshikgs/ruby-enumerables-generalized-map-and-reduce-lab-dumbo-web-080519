@@ -4,7 +4,7 @@ def map(array)
   new = []
   i = 0
   while i < array.length do
-    new.push( yield(array[i]) )
+    new.push( yield(array[i].each {|n| n * 2}) )
     i += 1
   end
   new
