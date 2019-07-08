@@ -4,13 +4,13 @@ def map(array)
   new = []
   i = 0
   while i < array.length do
-    new.push( yield(array[i].each {|n| n * 2}) )
+    new.push( yield(array[i]) )
     i += 1
   end
   new
 end
 
-# map(array){|n| n * 2}
+# map(array){|n| n * -1}
 
 
 
