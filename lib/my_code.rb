@@ -29,4 +29,3 @@ def reduce(array, start=nil)
   end
   sum
 end
-map([1, 2, 3, -9]){|n| n * 2}
