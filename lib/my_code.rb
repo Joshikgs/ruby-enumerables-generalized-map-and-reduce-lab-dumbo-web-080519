@@ -4,7 +4,7 @@ def map(array)
   new = []
   i = 0
   while i < array.length do
-    new.push( yield(array.each {|n| n * 2}) )
+    new.push( yield(array[i].each {|n| n * 2}) )
     i += 1
   end
   new
@@ -29,4 +29,4 @@ def reduce(array, start=nil)
   end
   sum
 end
-map([1, 2, 3, -9]){|n| n}
+map([1, 2, 3, -9]){|n| n * 2}
