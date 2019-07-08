@@ -24,3 +24,5 @@ def reduce(array, start=nil)
   end
   sum
 end
+
+map(array){|n| n * -1}
